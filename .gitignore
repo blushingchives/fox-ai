@@ -9,3 +9,6 @@ instance-manager/instance-manager
 
 # built VM bootstrap binary
 instance-manager/base/*/init.bin
+
+node_modules/
+$PWD/
