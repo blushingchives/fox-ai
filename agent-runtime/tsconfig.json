@@ -1,0 +1,27 @@
+{
+  // Typecheck only — never emits. The VM runs index.ts directly under Node's
+  // native type stripping, so there is no build artifact to keep in sync and
+  // the image build stays a plain `npm ci` + copy.
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+
+    // Node strips types rather than compiling them, so every construct must be
+    // erasable (no enums, namespaces or parameter properties) and type-only
+    // imports must say so explicitly.
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["index.ts"]
+}
