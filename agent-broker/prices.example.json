@@ -1,0 +1,14 @@
+{
+  "__note": "EXAMPLE VALUES — confirm against current Anthropic/OpenAI pricing before use. USD per MILLION tokens. Keys match model ids by longest prefix, so a family prefix covers dated ids. cache_read = cached-input price; cache_write = 0 for OpenAI (no write surcharge). Copy to prices.json.",
+
+  "claude-opus-4":     { "input": 15.0,  "output": 75.0, "cache_write": 18.75, "cache_read": 1.50 },
+  "claude-sonnet-4":   { "input": 3.0,   "output": 15.0, "cache_write": 3.75,  "cache_read": 0.30 },
+  "claude-haiku-4":    { "input": 0.80,  "output": 4.0,  "cache_write": 1.0,   "cache_read": 0.08 },
+  "claude-3-5-haiku":  { "input": 0.80,  "output": 4.0,  "cache_write": 1.0,   "cache_read": 0.08 },
+
+  "gpt-4o":            { "input": 2.50,  "output": 10.0, "cache_write": 0.0,   "cache_read": 1.25 },
+  "gpt-4o-mini":       { "input": 0.15,  "output": 0.60, "cache_write": 0.0,   "cache_read": 0.075 },
+  "gpt-4.1":           { "input": 2.0,   "output": 8.0,  "cache_write": 0.0,   "cache_read": 0.50 },
+  "gpt-4.1-mini":      { "input": 0.40,  "output": 1.60, "cache_write": 0.0,   "cache_read": 0.10 },
+  "o3":                { "input": 2.0,   "output": 8.0,  "cache_write": 0.0,   "cache_read": 0.50 }
+}
